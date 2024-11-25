@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import Homeimg from "../assets/home-img.svg";
 import { motion } from "framer-motion";
 
@@ -21,12 +22,15 @@ export default function Header() {
         </p>
         <div className="flex items-center justify-center lg:justify-start space-x-4">
           {/* Primary Button */}
-          <a
-            href="#"
+          <Link
+            to="services"
+            smooth={true}
+            duration={500}
+            offset={-100}
             className="px-8 py-3 bg-green-500 text-white font-medium text-md md:text-lg rounded-md hover:bg-white hover:text-green-500 hover:border hover:border-green-500 transition ease-in-out duration-300"
           >
             Get's Started
-          </a>
+          </Link>
         </div>
       </motion.div>
 

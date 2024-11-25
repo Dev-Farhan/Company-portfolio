@@ -17,6 +17,9 @@ export default {
           "100%": { transform: "translateX(0)", opacity: 1 },
         },
       },
+      fontFamily: {
+        parkinsans: ["Parkinsans", "sans-serif"], // For Parkinsans
+      },
     },
   },
   plugins: [],
